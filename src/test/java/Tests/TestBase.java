@@ -12,11 +12,13 @@ public class TestBase {
     @BeforeClass(alwaysRun = true)
     public void setUp(){
         app.start();
+        app.amazonHelper().preConditions();
+
 
     }
     @AfterClass(alwaysRun = true)
     public void tearDown(){
-        app.end();
+        //app.end();
     }
 
 }

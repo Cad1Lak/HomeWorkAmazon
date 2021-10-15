@@ -27,6 +27,7 @@ public class AppManager {
         }else if(browser.equals(BrowserType.FIREFOX)){
             wd = new EventFiringWebDriver(new FirefoxDriver());
         }
+
         amazonHelper = new AmazonHelper(wd);
         wd.manage().window().maximize();
         wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

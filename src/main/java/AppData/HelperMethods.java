@@ -27,11 +27,12 @@ public class HelperMethods {
     }
     public void pause(){
         try {
-            Thread.sleep(2000);
+            Thread.sleep(1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
     }
+
 
 
 }
